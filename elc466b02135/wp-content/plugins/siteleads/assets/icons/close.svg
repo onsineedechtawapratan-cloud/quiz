@@ -1,0 +1,9 @@
+<svg viewBox="0 0 52 52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="26" cy="26" fill="currentColor" r="26" />
+	<rect width="27.143" height="3.899" rx="1.949"
+		transform="scale(.99804 1.00196) rotate(45 -9.673 30.009)"
+		fill="var(--sl-icon-color, red)" />
+	<rect width="27.143" height="3.899" rx="1.949"
+		transform="scale(-.99804 -1.00196) rotate(-45 -40.983 36.17)"
+		fill="var(--sl-icon-color, red)" />
+</svg>

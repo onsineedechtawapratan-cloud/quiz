@@ -1,0 +1,431 @@
+<?php
+return array(
+	'version' => '1',
+	'props'   => array(
+		'chatView'                  => array(
+			'headerMessage'  => array(
+				'value'        => 'Welcome!',
+				'fontSettings' => array(
+					'family' => 'Geist',
+					'weight' => '600',
+					'size'   => 20,
+					'align'  => 'left',
+					'color'  => '#ffffff',
+				),
+			),
+			'welcomeMessage' => array(
+				'value'        => '👋 Can\'t wait to hear from you! Pick your way to connect!',
+				'fontSettings' => array(
+					'family' => 'Geist',
+					'weight' => '400',
+					'color'  => '#404040',
+					'align'  => 'left',
+					'size'   => 14,
+				),
+			),
+		),
+		'firstTimeSave'             => true,
+		'name'                      => 'Widget',
+		'isEnabled'                 => false,
+		'showOn'                    => array(
+			'desktop',
+			'mobile',
+		),
+		'defaultState'              => 'collapsed',
+		'iconsDirection'            => 'vertical',
+		'popupView'                 => array(
+			'desktop' => 'simple',
+			'mobile'  => 'same-as-desktop',
+		),
+		'typography'                => 'Inter',
+		'size'                      => 'medium',
+		'showOnPages'               => array(
+			'enabled' => false,
+			'action'  => 'all',
+			'value'   => array(),
+			'rules'   => array(
+				'rule-1' => array(
+					'action' => 'showOn',
+					'value'  => 'homepage',
+					'values' => array(),
+				),
+			),
+		),
+		'chat'                      => array(
+			'headerColor'     => '#02AE94',
+			'backgroundColor' => '#FAFAFA',
+		),
+		'cta'                       => array(
+			'text'            => array(
+				'value'  => 'Contact us',
+				'format' => null,
+			),
+			'textColor'       => '#2758E5',
+			'backgroundColor' => '#FFFFFF',
+			'showOptions'     => 'all-the-time',
+			'shape'           => 'rounded',
+		),
+		'attentionEffect'           => 'none',
+		'activeChannels'            => array(
+			'phone',
+			'whatsapp',
+			'email',
+		),
+		'channelsOrder'             => array(
+			'phone',
+			'whatsapp',
+			'email',
+		),
+		'isTryingAgent'             => false,
+		'isTryingAgentWithChannels' => false,
+		'chatTheme'                 => 'default',
+		'channels'                  => array(
+			'phone'         => array(
+				'enabled'         => true,
+				'label'           => 'Phone',
+				'backgroundColor' => '#029900',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'Phone',
+				'children'        => array(
+					array(
+						'id'     => 1,
+						'name'   => '',
+						'number' => '',
+					),
+				),
+			),
+			'whatsapp'      => array(
+				'enabled'         => true,
+				'label'           => 'WhatsApp',
+				'backgroundColor' => '#25D366',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'WhatsApp',
+				'children'        => array(
+					array(
+						'id'     => 1,
+						'name'   => '',
+						'number' => '',
+					),
+				),
+			),
+			'email'         => array(
+				'enabled'         => true,
+				'label'           => 'E-mail',
+				'backgroundColor' => '#3399FF',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'E-mail',
+				'children'        => array(
+					array(
+						'id'   => 1,
+						'name' => '',
+						'to'   => '',
+					),
+				),
+			),
+			'messenger'     => array(
+				'enabled'         => false,
+				'label'           => 'Messenger',
+				'backgroundColor' => '#0866FF',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'Messenger',
+			),
+			'instagramDm'   => array(
+				'enabled'            => false,
+				'label'              => 'Instagram DM',
+				'name'               => '',
+				'username'           => '',
+				'backgroundColor'    => '#D300C5',
+				'backgroundGradient' => 'linear-gradient(72.44deg,#FF0169 4.69%,#D300C5  48.96%,#7638FA 92.19%)',
+				'showOn'             => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'        => 'Instagram DM',
+			),
+			'instagramPage' => array(
+				'enabled'            => false,
+				'label'              => 'Instagram Page',
+				'name'               => '',
+				'page'               => '',
+				'backgroundColor'    => '#D300C5',
+				'backgroundGradient' => 'linear-gradient(72.44deg,#FF0169 4.69%,#D300C5  48.96%,#7638FA 92.19%)',
+				'showOn'             => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'        => 'Instagram Page',
+			),
+			'wechat'        => array(
+				'enabled'         => false,
+				'label'           => 'WeChat',
+				'name'            => '',
+				'username'        => '',
+				'backgroundColor' => '#2AAE67',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'WeChat',
+			),
+			'snapchat'      => array(
+				'enabled'         => false,
+				'label'           => 'Snapchat',
+				'name'            => '',
+				'userid'          => '',
+				'backgroundColor' => '#FFFC00',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'Snapchat',
+				'contactSettings' => array(
+					'headline' => array(
+						'value'        => '',
+						'fontSettings' => array(
+							'color'  => '#171717',
+							'family' => 'Geist',
+							'weight' => '600',
+							'size'   => 20,
+							'align'  => 'left',
+						),
+					),
+				),
+			),
+			'discord'       => array(
+				'enabled'         => false,
+				'label'           => 'Discord',
+				'name'            => '',
+				'invitationCode'  => '',
+				'backgroundColor' => '#5865F2',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'Discord',
+			),
+			'telegram'      => array(
+				'enabled'            => false,
+				'label'              => 'Telegram',
+				'name'               => '',
+				'username'           => '',
+				'backgroundColor'    => '#2AABEE',
+				'backgroundGradient' => 'linear-gradient(180deg, #2AABEE 0%, #229ED9 100%)',
+				'showOn'             => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'        => 'Telegram',
+			),
+			'sms'           => array(
+				'enabled'         => false,
+				'label'           => 'SMS',
+				'name'            => '',
+				'number'          => '',
+				'code'            => '',
+				'backgroundColor' => '#E91E63',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'SMS',
+			),
+			'tiktok'        => array(
+				'enabled'         => false,
+				'label'           => 'TikTok',
+				'name'            => '',
+				'username'        => '',
+				'backgroundColor' => '#000000',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'TikTok',
+			),
+			'x'             => array(
+				'enabled'         => false,
+				'label'           => 'X',
+				'name'            => '',
+				'username'        => '',
+				'backgroundColor' => '#000000',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'X (Twitter)',
+			),
+			'maps'          => array(
+				'enabled'         => false,
+				'label'           => 'Maps',
+				'name'            => '',
+				'location'        => '',
+				'backgroundColor' => '#EA4335',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'textOnHover'     => 'Google Maps',
+			),
+			'aiAgent'       => array(
+				'enabled'         => false,
+				'label'           => 'AI assistant',
+				'name'            => '',
+				'backgroundColor' => '#2758E5',
+				'showOn'          => array(
+					'desktop',
+					'mobile',
+				),
+				'avatarName'      => '',
+				'textOnHover'     => '',
+				'fontFamily'      => 'Open Sans',
+				'children'        => array(
+					array(
+						'id' => 1,
+					),
+				),
+			),
+		),
+		'trigger'                   => array(
+			'initialDelay'     => array(
+				'enabled' => true,
+				'seconds' => 0,
+			),
+			'onScroll'         => array(
+				'percent' => 25,
+			),
+			'dayScheduling'    => array(
+				'timezone' => 'website',
+			),
+			'dateScheduling'   => array(
+				'enabled'   => false,
+				'timezone'  => 'website',
+				'startTime' => '00:00',
+				'endTime'   => '24:00',
+			),
+			'countryTargeting' => array(
+				'enabled' => false,
+				'service' => 'siteleads',
+			),
+		),
+		'channelsBar'               => array(
+			'type'               => 'continuous',
+			'useChannelColor'    => false,
+			'iconSize'           => 'medium',
+			'backgroundColor'    => '#1E88E5',
+			'maxVisibleChannels' => '3',
+		),
+		'ctaBar'                    => array(
+			'title'           => 'Chat with us now!',
+			'subtitle'        => '',
+			'backgroundColor' => '#1E88E5',
+			'avatar'          => array(),
+			'iconType'        => 'send',
+			'contentPosition' => 'center',
+			'titleConfig'     => array(
+				'color'  => '#fff',
+				'family' => 'Geist',
+				'weight' => '600',
+				'size'   => '20',
+			),
+			'subtitleConfig'  => array(
+				'color'  => '#fff',
+				'family' => 'Geist',
+				'weight' => '500',
+				'size'   => '14',
+			),
+		),
+		'greeting'                  => array(
+			'enabled'       => true,
+			'type'          => 'simple',
+			'template'      => 'default',
+			'position'      => 'near-widget',
+			'dismiss'       => 'on-widget-click',
+			'dismissDelay'  => 120,
+			'title'         => 'Hello there!',
+			'titleStyle'    => null,
+			'text'          => '👋 Hello!',
+			'textStyle'     => array(
+				'color'  => '#787878',
+				'family' => 'Geist',
+				'weight' => '400',
+				'size'   => 14,
+			),
+			'image'         => null,
+			'width'         => null,
+			'bgColor'       => '#ffffff',
+			'borderWidth'   => 0,
+			'borderColor'   => '#e4e4e4',
+			'radius'        => 5,
+			'spacing'       => 10,
+			'shadow'        => '1',
+			'entrance'      => 'fade',
+			'entranceDelay' => 1,
+		),
+		'customPageTitle'           => array(
+			'enabled' => false,
+			'title'   => '✉️ You have a new message!',
+		),
+	),
+	'style'   => array(
+		'descendants' => array(
+			'icon' => array(
+				'background'  => '#2363EB',
+				'color'       => '#FFFFFF',
+				'position'    => 'right',
+				'boxShadow'   => '3',
+				'borderColor' => '#2363EB',
+				'borderWidth' => '0',
+				'type'        => 'send',
+			),
+			'cta'  => array(
+				'color'           => '#2363EB',
+				'backgroundColor' => '#FFFFFF',
+			),
+			'chat' => array(
+				'header'    => array(
+					'background'     => '#2758E5',
+					'avatarName'     => '#FFFFFF',
+					'iconBackground' => '#FFFFFF',
+					'minimizeIcon'   => '#FFFFFF',
+					'fontSettings'   => array(
+						'family' => 'Geist',
+						'weight' => '500',
+						'size'   => 16,
+					),
+				),
+				'container' => array(
+					'background'             => '#ffffff',
+					'agentMessageBackground' => '#f5f5f5',
+					'agentMessageText'       => '#404040',
+					'userMessageBackground'  => '#D9E5FB',
+					'userMessageText'        => '#404040',
+					'fontSettings'           => array(
+						'family' => 'Geist',
+						'weight' => '400',
+						'size'   => 16,
+					),
+				),
+				'footer'    => array(
+					'background'   => '#ffffff',
+					'iconsColor'   => '#737373',
+					'fontSettings' => array(
+						'family' => 'Geist',
+						'weight' => '400',
+						'size'   => 12,
+					),
+				),
+			),
+		),
+	),
+);

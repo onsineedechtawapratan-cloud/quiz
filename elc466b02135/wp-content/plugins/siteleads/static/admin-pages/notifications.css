@@ -1,0 +1,252 @@
+.siteleads-remote-notification {
+	padding: 0;
+}
+
+.siteleads-remote-notification.is-dismissible {
+	position: relative;
+	padding-right: 50px;
+}
+
+.siteleads-remote-notification-info {
+	border-left-color: #a041f7;
+	background: #ffffff;
+	--siteleads-notice-base-font-size: 18px;
+}
+
+.siteleads-remote-notification-info * {
+	font-size: var(--siteleads-notice-base-font-size, 16px);
+}
+
+.siteleads-remote-notification-message h1 {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 2);
+}
+.siteleads-remote-notification-message h2 {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 1.5);
+}
+.siteleads-remote-notification-message h3 {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 1.25);
+}
+.siteleads-remote-notification-message h4 {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 1);
+}
+.siteleads-remote-notification-message h5 {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 0.8);
+}
+.siteleads-remote-notification-message h6 {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 0.64);
+}
+
+.siteleads-remote-notification-message h1,
+.siteleads-remote-notification-message h2,
+.siteleads-remote-notification-message h3,
+.siteleads-remote-notification-message h4,
+.siteleads-remote-notification-message h5,
+.siteleads-remote-notification-message h6 {
+	margin-bottom: 0.5em;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.siteleads-remote-notification-message .lead {
+	font-size: calc(var(--siteleads-notice-base-font-size) * 1.25);
+	font-weight: 300;
+}
+
+.siteleads-remote-notification-message small,
+.siteleads-remote-notification-message .small {
+	font-size: 0.875em;
+}
+
+.siteleads-remote-notification-message sub,
+.siteleads-remote-notification-message sup {
+	position: relative;
+	font-size: 0.75em;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+.siteleads-remote-notification-message sub {
+	bottom: -0.25em;
+}
+
+.siteleads-remote-notification-message sup {
+	top: -0.5em;
+}
+
+.siteleads-remote-notification-message .text-muted {
+	color: #6c757d;
+}
+
+.siteleads-remote-notification-message .initialism {
+	font-size: 0.875em;
+	text-transform: uppercase;
+}
+
+.siteleads-remote-notification-message blockquote {
+	margin: 0 0 1em;
+	font-size: calc(var(--siteleads-notice-base-font-size) * 1.25);
+}
+
+.siteleads-remote-notification-message .blockquote-footer {
+	display: block;
+	font-size: 0.875em;
+	color: #6c757d;
+}
+
+.siteleads-remote-notification-message hr {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	border-top: 1px solid currentColor;
+	opacity: 0.25;
+}
+
+.siteleads-remote-notification-message legend {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	margin-bottom: 0.5em;
+	font-size: 1.5em;
+	line-height: inherit;
+	color: inherit;
+	white-space: normal;
+}
+
+.siteleads-remote-notification-message mark,
+.siteleads-remote-notification-message .mark {
+	padding: 0.2em;
+	background-color: #fcf8e3;
+}
+
+.siteleads-remote-notification-message dt {
+	font-weight: 700;
+}
+
+.siteleads-remote-notification-message kbd kbd {
+	padding: 0;
+	font-size: 100%;
+	font-weight: 700;
+}
+
+.siteleads-remote-notification-message .list-inline {
+	padding-left: 0;
+	list-style: none;
+}
+
+.siteleads-remote-notification-message .list-inline-item {
+	display: inline-block;
+}
+
+.siteleads-remote-notification-message .list-inline-item:not(:last-child) {
+	margin-right: 0.5em;
+}
+
+.siteleads-remote-notification-info .siteleads-remote-notification-icon {
+	fill: #a041f7;
+}
+.siteleads-remote-notification-error .siteleads-remote-notification-icon {
+	fill: #a041f7;
+	background-color: rgba(214, 54, 56, 0.1);
+}
+.siteleads-remote-notification-warning .siteleads-remote-notification-icon {
+	fill: #dba617;
+	background-color: rgba(219, 166, 23, 0.1);
+}
+.siteleads-remote-notification-success .siteleads-remote-notification-icon {
+	fill: #00a32a;
+	background-color: rgba(0, 163, 42, 0.1);
+}
+
+.siteleads-remote-notification-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.siteleads-remote-notification-icon {
+	display: flex;
+	align-items: center;
+	width: 20px;
+	color: #5246f1;
+	fill: #5246f1;
+	padding: 16px;
+	background-color: rgba(82, 70, 241, 0.1);
+}
+.siteleads-remote-notification-icon svg {
+	height: 20px;
+	width: 20px;
+}
+
+.siteleads-remote-notification-message {
+	width: 100%;
+	padding: 20px;
+	font-size: 16px;
+}
+.siteleads-remote-notification-message a {
+	color: #5246f1;
+}
+.siteleads-remote-notification-message p {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+.siteleads-remote-notification-message > :first-child {
+	margin-top: 0;
+}
+
+.siteleads-remote-notification-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 13px 0;
+}
+
+.siteleads-remote-notification-buttons .siteleads-remote-notification-primary {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: 0.275em 1em;
+	font-size: 1em;
+	line-height: 1.5;
+	border-radius: 4px;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	background-color: #5246f1;
+	color: #ffffff;
+	text-decoration: none;
+}
+.siteleads-remote-notification-buttons
+	.siteleads-remote-notification-primary:hover {
+	background-color: #6a5ef3;
+	color: #ffffff;
+	text-decoration: none;
+}
+.siteleads-remote-notification-buttons
+	.siteleads-remote-notification-secondary {
+	display: inline-block;
+	padding: 0.375em 0.75em;
+	color: #5246f1;
+	text-decoration: underline;
+	background-color: transparent;
+	border: none;
+}
+.siteleads-remote-notification-buttons
+	.siteleads-remote-notification-secondary:hover {
+	color: #6a5ef3;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+@media (max-width: 768px) {
+	.siteleads-remote-notification-buttons {
+		flex-direction: column;
+	}
+}

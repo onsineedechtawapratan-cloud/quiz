@@ -1,0 +1,119 @@
+.rufous-siteleads-recommendation-plugins-tooltip__container {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rufous-siteleads-recommendation-plugins-tooltip {
+  line-height: 0;
+  position: relative;
+}
+
+.rufous-siteleads-recommendation-plugins-tooltip__content {
+  position: absolute;
+  line-height: 1.4;
+  width: 350px;
+  max-height: 500px;
+  bottom: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 18px 5px rgba(73, 104, 126, 0.2);
+  border-radius: 4px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  text-align: left;
+  font-size: 11px;
+  z-index: 9999999999;
+  animation: rufous-plugins-tooltip-fade-in 0.3s ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+.rufous-siteleads-recommendation-plugins-tooltip:hover .rufous-siteleads-recommendation-plugins-tooltip__content {
+  pointer-events: initial;
+  display: flex;
+}
+
+.rufous-siteleads-recommendation-plugins-tooltip__item__title {
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.rufous-siteleads-recommendation-plugins-tooltip__item__description {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.kubio-customizer-panel .rufous-siteleads-recommendation-plugins-tooltip__content {
+  bottom: unset;
+  top: 100%;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#customize-controls .customize-control-ope-info {
+  position: relative;
+}
+
+#customize-controls .rufous-siteleads-recommendation-plugins-tooltip {
+  position: static;
+}
+
+#customize-controls .rufous-siteleads-recommendation-plugins-tooltip__content {
+  transform: none;
+  width: auto;
+}
+
+@keyframes rufous-plugins-tooltip-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rufous-install-plugin-description {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+.rufous-admin-big-notice div.description.large-text {
+  font-size: 13px;
+  margin: 2px 0 5px;
+  color: #646970;
+  margin-top: 1em;
+  padding: 2px;
+  line-height: 1.5;
+}
+
+.kubio-starter-edit-overlay__message {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-size: 13px;
+}
+
+.kubio-starter-edit-overlay__message .rufous-siteleads-recommendation-plugins-tooltip__content {
+  max-width: unset !important;
+}
+
+.kubio-starter-edit-overlay__message .rufous-siteleads-recommendation-plugins-tooltip__content * {
+  text-align: left !important;
+  color: #50575e !important;
+}
+
+@media (max-width: 1000px) {
+  .siteleads-is-customizer-preview .rufous-siteleads-for-theme-root:not(#extra-1):not(#extra-1) {
+    display: none !important;
+  }
+}

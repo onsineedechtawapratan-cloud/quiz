@@ -1,0 +1,38 @@
+{
+	"name": "siteleads/siteleads",
+	"autoload": {
+		"psr-4": {
+			"SiteLeads\\": "lib/",
+			"SiteLeads\\PRO\\": "pro/src"
+		}
+	},
+	"require": {
+		"pragmarx/ia-arr": "7.3.3",
+		"lodash-php/lodash-php": "0.1.0"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.2",
+		"squizlabs/php_codesniffer": "^3.13",
+		"phpcompatibility/php-compatibility": "^9.3",
+		"wp-coding-standards/wpcs": "^3.3",
+		"sirbrillig/phpcs-variable-analysis": "^2.13",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"slevomat/coding-standard": "^8.15"
+	},
+	"scripts": {
+		"format": "\"vendor/bin/phpcbf\" --standard=phpcs.xml ",
+		"lint": "\"vendor/bin/phpcs\" --standard=phpcs.xml --runtime-set ignore_warnings_on_exit 1",
+		"compatibility-check": "\"vendor/bin/phpcs\" -d memory_limit=1024M -p ./ --extensions=php  --ignore=\"./build/*,*/node_modules/*,*/vendor/*,*/.history/*\" --standard=PHPCompatibility --runtime-set testVersion 7.1"
+	},
+	"config": {
+		"platform-check": false,
+		"platform": {
+			"php": "7.4"
+		},
+		"allow-plugins": {
+			"php-http/discovery": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"autoloader-suffix": "SiteLeads"
+	}
+}
